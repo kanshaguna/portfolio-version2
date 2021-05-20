@@ -1,56 +1,48 @@
 .portfolio {
-    height: 640px;
-    cursor: pointer;
-    padding-top: 50px;
-    background-color: white;
-    
-    &__thumbnails {
-        padding: 10px;
+
+    &--cardView {
+        background-color: white;
+        border-radius: 10px;
+        margin: auto;
+        padding-left: 40px;
+        padding-right: 40px;
+        border: 1px black solid;
+        box-shadow: inset 0 0 10px rgb(78, 78, 78);
+
+        @mixin atMedium {
+            padding-left: 80px;
+            padding-right: 80px;
+        }
+
+    }
+
+    &--thumbnail {
+        height:70px;
+        width:70px;
+        padding: 5px;
+
+        @mixin atMedium {
+            height:100px;
+            width:100px;
+            padding: 15px;
+        }
     }
 
     &--description {
-        text-align: center;
+        margin: auto;
+        font-size:0.5rem;
+        text-align: left;
         font-family: 'Montserrat', sans-serif;
         font-weight: 400;
-    }
+        color: black;
 
-    &--projectType {
-        text-align: center;
-        font-family: 'Montserrat', sans-serif;
-        font-weight: 300;
-        font-size: 0.8rem;
-    }
-
-    @mixin atSmall {
-        height: 300px;
-        padding-top: 40px;
-        padding-bottom: 30px;
-    }
-
-
-    @mixin atMedium {
-        height: 280px;
-        padding-top: 20px;
-        padding-bottom: 30px;
-       
-
-    &__thumbnails {
-        padding: 30px;
-        opacity: 0.9;
-        transition: .5s;
-
+        @mixin atMedium {
+            font-size:0.7rem;
         }
 
-    &__thumbnails:hover {
-        padding:0;
-        box-shadow: 0 0 5px #72A985; 
-        transform: scale(1.2);
+        @mixin atLarge {
+            
+            font-size:0.6rem;
         }
     }
-     @mixin atLarge {
-        height: 310px;
-        padding: 50px;
-    }
-
-    
 }

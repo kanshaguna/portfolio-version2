@@ -5,12 +5,14 @@
 @import "modules/_headline.css";
 @import "modules/_particles-js.css";
 @import "modules/_flex-container.css";
-@import "modules/_skill-set.css";
-@import "modules/_skill-logo.css";
+@import "modules/_bottomNavs.css";
 @import "modules/_portfolio.css";
 @import "modules/_contact.css";
-@import "modules/_titleBar.css";
-@import "modules/_reveal-item.css";
+@import "modules/_mainBoxBlack.css";
+@import "modules/_mainBoxWhite.css";
+@import "modules/_skills-icon.css";
+
+
 
 
 

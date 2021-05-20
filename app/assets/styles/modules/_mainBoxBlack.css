@@ -1,0 +1,151 @@
+.mainBoxBlack {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: black;
+    color: white;
+    opacity: 0.9;
+    width: 92vw;
+    height: 70vh;
+    margin:auto;
+    margin-top: 70px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgb(78, 78, 78);
+
+
+    @mixin atMedium {
+        margin-left: auto;
+        margin-right: auto;
+
+    }
+
+    &--image {
+        margin:auto;
+
+        @mixin atMedium {
+            margin:auto;
+            
+        }
+    }
+
+    &--imageDev {
+        width:180px;
+        height: 180px;
+        border-radius: 2%;
+
+
+        @mixin atSmall {
+            width:230px;
+            height: 230px;
+
+        }
+        
+    }
+
+
+    &--imageIntroSection {
+        width:180px;
+        height: 180px;
+        border-radius: 2%;
+
+
+        @mixin atSmall {
+            width:200px;
+            height: 200px;
+
+        }
+        
+    }
+
+    &--imageContactSection {
+        width:150px;
+        height: 150px;
+        border-radius: 2%;
+        padding-top:5px;
+
+        @mixin atSmall {
+            width:230px;
+            height: 230px;
+
+        }
+
+   
+    }
+
+    &--imageProjectSection {
+        width:150px;
+        height: 150px;
+        border-radius: 2%;
+
+
+        @mixin atSmall {
+            width:230px;
+            height: 230px;
+
+        }       
+    }
+
+    &--imageInProgress {
+        width:250px;
+        height: 250px;
+        border-radius: 2%;
+
+        @mixin atLarge {
+           width:300px;
+            height: 300px;
+            
+        }
+    }
+
+    &--introText {
+        font-size: 0.6rem;
+        padding:10px;
+      
+        @mixin atSmall {
+            width: 450px;
+            padding-right: 50px;
+            margin:auto;
+           
+        }
+
+        @mixin atMedium {
+            padding-right: 50px;
+            line-height: 0.8rem;
+        }
+    }
+    
+    &--textAlignRight {
+       text-align: right;
+      
+    }
+
+    &--inProgressText {
+        margin: auto;
+        font-size: 0.7rem;
+        text-align: center;
+        padding-bottom: 10px;
+
+        @mixin atMedium {
+            font-size: 0.9rem;
+
+        }
+    }
+
+    &--contactText {
+        font-size: 0.6rem;
+
+            @mixin atSmaller {
+               padding-right: 10px;
+                line-height:1.2rem;
+                margin:auto;
+            
+        }
+
+        @mixin atLarge {
+                padding-right: 50px;
+            
+        }
+
+    }
+}

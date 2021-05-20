@@ -1,0 +1,11 @@
+.mainBoxWhite {
+ 
+    background-color: rgb(255, 255, 255);
+    color: black;
+    margin:auto;
+    font-weight: 400;
+    border-radius: 15px;
+    width: 92vw;
+    margin-bottom: 30px;
+
+}

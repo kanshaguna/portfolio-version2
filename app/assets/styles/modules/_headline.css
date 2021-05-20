@@ -1,23 +1,30 @@
 ul {
   list-style-type: none;
   margin: 0;
-  padding: 0;
+  padding: 12px;
   overflow: hidden;
   background-color: black;
   border-bottom: 1px solid white;
+
+    @mixin atSmaller {
+       padding: 10px;
+
+    }
 }
 
-.content {
-     padding: 16px;
-}
 
 li {
   float: left;
   display: block;
   color: white;
   text-align: center;
-  padding: 14px 16px;
+  padding-right: 50px;
   text-decoration: none;
+
+  @mixin atLarge {
+     padding: 2px 16px;
+
+  }
 }
 
 a {
@@ -28,11 +35,11 @@ a {
 .sticky {
      position: fixed;
      top:0;
-     width: 100%;
+     width: 100vw;
 }
 
 .sticky + .content {
-     padding-top: 16px;
+     padding-top: 30px;
 }
 
 
@@ -41,9 +48,8 @@ a {
      z-index: 1;
 
      &--resumeIcon {
-         height: 2px;
-         width: 2px;
-         padding-right: 40px;
+         height: 1px;
+         width: 1px;
 
          @mixin atMedium {
               display: none;
@@ -52,18 +58,22 @@ a {
          @mixin atLarge {
               display: none;
          }
-          
      }
 
      &--nameFont {
           font-size: 1.5rem;
           font-family: 'Sacramento', cursive;
+
+          @mixin atLarge {
+               font-size: 1.5rem;
+          }
      }
 
      &--resumeFont {
           font-family:'Montserrat', sans-serif;
           font-size: 1.1rem;
           display: none;
+          margin-right: 10px;
      }
 
      @mixin atMedium {

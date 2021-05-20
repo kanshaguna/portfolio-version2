@@ -2,7 +2,6 @@ class Particles {
 
   constructor() {
     this.particles = document.getElementById("#particles-js");
-
     this.particleLoad()
   }
   
@@ -19,7 +18,7 @@ class Particles {
         }
       },
       "color": {
-        "value": "#A2C563",
+        "value": "#7e9af5",
         "animation": {
           "enable": true,
           "speed": 20,
@@ -56,7 +55,7 @@ class Particles {
         }
       },
       "links": {
-        "enable": true,
+        "enable": false,
         "distance": 100,
         "color": "#dddd",
         "opacity": 0.4,
@@ -124,11 +123,7 @@ class Particles {
   };
   tsParticles.load('particles-js', this.particles)
 
-    
   }
-
 }
   
-
-
 export default Particles;
