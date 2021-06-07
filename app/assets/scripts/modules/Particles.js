@@ -11,7 +11,7 @@ class Particles {
     "fpsLimit": 60,
     "particles": {
       "number": {
-        "value": 40,
+        "value": 10,
         "density": {
           "enable": true,
           "value_area": 800
@@ -120,7 +120,9 @@ class Particles {
       "repeat": "no-repeat",
       "size": "cover"
     }
+    
   };
+
   tsParticles.load('particles-js', this.particles)
 
   }
