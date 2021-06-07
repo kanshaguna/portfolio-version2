@@ -1,9 +1,8 @@
-.bottomNavs {
+.topicIcons {
     height:30px;
     width: 30px;
     padding-left:7px;
     padding-right: 7px;
-    margin-top:20px;
   
 
     @mixin atSmall {
@@ -77,11 +76,4 @@
 
         }
     } 
-}
-
-.bottomNavs:hover {
-        box-shadow: 0 0 10px rgb(221, 84, 233);
-        border-radius: 50%;
-        padding: 0;
-
 }

@@ -19,6 +19,7 @@
         font-family: 'Montserrat', sans-serif;
         font-size: 0.5rem;
         padding-right: 5px;
+        font-weight: 500;
 
         @mixin atSmall {
             font-size: 0.5rem;
@@ -40,6 +41,7 @@
         text-align: center;
         font-family: 'Montserrat', sans-serif;
         font-size: 0.4rem;
+        font-weight: 600;
 
         @mixin atSmall {
             font-size: 0.5rem;
@@ -57,6 +59,7 @@
         border-bottom: 0.5px solid #bbb7b7;
         width: 65px;
         text-align: left;
+        font-weight: 700;
 
         @mixin atMedium {
             width: 80px;
@@ -65,14 +68,10 @@
         @mixin atLarge {
             margin-top: 30px;
         }
-
-
     }
-
-
 }
 
-.skill-icon:hover {
+.skillsIcon--icon:hover {
         padding: 1px;
         border-radius: 50%;
         box-shadow: 0 0 40px #7e9af5; 

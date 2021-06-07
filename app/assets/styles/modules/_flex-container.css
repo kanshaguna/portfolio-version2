@@ -4,7 +4,11 @@
     align-items: center;
     flex-flow: row wrap;
     margin: auto;
-    
+  
+    &--inline {
+        display:inline;
+    }
+
     
     &--text {
         font-family: 'Montserrat', sans-serif;

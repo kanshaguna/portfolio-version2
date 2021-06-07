@@ -5,13 +5,14 @@
     color: rgb(49, 47, 47);
     opacity: 0.9;
     width: 92vw;
-    height: 70vh;
+    height: 75vh;
     margin:auto;
-    margin-top: 70px;
+    margin-top: 20px;
     font-family: 'Montserrat', sans-serif;
     font-weight: 400;
     border-radius: 15px;
     box-shadow: 0 0 10px rgb(78, 78, 78);
+     
 
 
     @mixin atMedium {
@@ -134,7 +135,8 @@
     }
 
     &--contactText {
-        font-size: 0.6rem;
+        font-size: 0.5rem;
+        font-weight: 500;
 
             @mixin atSmaller {
                padding-right: 10px;
@@ -149,4 +151,5 @@
         }
 
     }
+
 }
