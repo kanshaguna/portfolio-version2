@@ -7,9 +7,15 @@
        padding-left: 5px;
        padding-right: 5px;
 
-       @mixin atMedium {
-           padding-left: 15px;
-            padding-right: 15px;
+       @mixin atSmall {
+           padding-left: 20px;
+            padding-right: 20px;
+
+       }
+
+       @mixin atLarge {
+           padding-left: 25px;
+            padding-right: 25px;
 
        }
     }
@@ -21,36 +27,43 @@
         padding-right: 5px;
         font-weight: 500;
 
+          @mixin atSmaller {
+            font-size: 0.7rem;
+        }
+
+
         @mixin atSmall {
-            font-size: 0.5rem;
+            font-size: 0.8rem;
         }
 
         @mixin atMedium {
-            font-size: 0.6rem;
+            font-size: 0.8rem;
             padding-right: 10px;
+            line-height: 1.1rem;
         }
 
-        @mixin atLarge {
-            line-height: 0.8rem;
         
-        }
 
     }
 
     &--iconText {
         text-align: center;
         font-family: 'Montserrat', sans-serif;
-        font-size: 0.4rem;
+        font-size: 0.5rem;
         font-weight: 600;
 
-        @mixin atSmall {
-            font-size: 0.5rem;
+        @mixin atSmaller {
+            font-size: 0.6rem;
+        }
+
+         @mixin atSmall {
+            font-size: 0.8rem;
         }
        
         @mixin atLarge {
-            font-size: 0.6rem;
+            font-size: 0.8rem;
             text-align: center;
-            font-size: 0.5rem;
+            
 
         }
     }
@@ -60,6 +73,14 @@
         width: 65px;
         text-align: left;
         font-weight: 700;
+
+        @mixin atSmaller {
+            font-size: 0.7rem;
+        }
+
+        @mixin atSmaller {
+            font-size: 0.8rem;
+        }
 
         @mixin atMedium {
             width: 80px;

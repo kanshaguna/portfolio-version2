@@ -2,10 +2,8 @@
 
     &--cardView {
         background-color: white;
-        border-radius: 10px;
         margin: auto;
-        padding-left: 40px;
-        padding-right: 40px;
+        padding: 20px;
         box-shadow: inset 0 0 2px rgb(78, 78, 78);
 
         @mixin atMedium {
@@ -19,11 +17,25 @@
         height:70px;
         width:70px;
         padding: 5px;
+        border-radius: 20px;
+
+        @mixin atSmaller {
+            height:80px;
+            width:80px;
+            padding: 15px;
+        }
 
         @mixin atMedium {
-            height:100px;
-            width:100px;
-            padding: 15px;
+            height:85px;
+            width:85px;
+            padding: 5px;
+        }
+
+        @mixin atLarge {
+            height:130px;
+            width:130px;
+            padding: 10px;
+            
         }
     }
 
@@ -43,18 +55,30 @@
     &--description {
         margin: auto;
         font-size:0.5rem;
-        text-align: left;
+        text-align: center;
         font-family: 'Montserrat', sans-serif;
         font-weight: 400;
         color: black;
 
-        @mixin atMedium {
+        @mixin atSmaller {
+            text-align: left;
             font-size:0.7rem;
         }
 
-        @mixin atLarge {
+        @mixin atSmall {
+            text-align: left;
+            font-size:0.8rem;
+        }
+
+        @mixin atMedium {
+            font-size:0.9rem;
+            line-height: 1.1rem;
             
-            font-size:0.6rem;
+        }
+
+        @mixin atLarge {
+             line-height: 1rem;
+            font-size:0.9rem;
         }
     }
 }

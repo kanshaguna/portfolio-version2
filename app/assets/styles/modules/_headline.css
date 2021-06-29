@@ -3,7 +3,7 @@ ul {
   margin: 0;
   padding: 12px;
   overflow: hidden;
-  background-color: black;
+  background-image: linear-gradient(to bottom right, rgb(136, 138, 245), rgb(223, 93, 223));
   border-bottom: 1px solid white;
 
     @mixin atSmaller {
@@ -60,12 +60,13 @@ a {
          }
      }
 
+
      &--nameFont {
           font-size: 1.5rem;
           font-family: 'Sacramento', cursive;
 
           @mixin atLarge {
-               font-size: 1.5rem;
+               font-size: 1.7rem;
           }
      }
 
@@ -73,7 +74,18 @@ a {
           font-family:'Montserrat', sans-serif;
           font-size: 1.1rem;
           display: none;
-          margin-right: 10px;
+          margin-right: 20px;
+          color: #FFFFFF;
+
+          @mixin atLarge {
+               font-size: 1.2rem;
+              
+          }
+     }
+
+     &--resumeFont:hover {
+          color: #582b72;
+          
      }
 
      @mixin atMedium {
@@ -92,4 +104,9 @@ a {
           
      }
 
+
 }
+
+
+
+

@@ -1,0 +1,28 @@
+.skills {
+
+
+
+    &--description {
+        margin: auto;
+        font-size:0.5rem;
+        text-align: center;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 400;
+        color: black;
+
+        @mixin atSmaller {
+            text-align: left;
+            font-size:0.7rem;
+        }
+
+        @mixin atMedium {
+            font-size:0.9rem;
+            
+        }
+
+        @mixin atLarge {
+            
+            font-size:0.9rem;
+        }
+    }
+}
