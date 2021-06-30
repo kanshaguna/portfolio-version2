@@ -1,21 +1,31 @@
 .skillsIcon {
 
     &--icon {
-        width: 35px;
-        height: 35px;
+        width: 40px;
+        height: 40px;
         border-radius: 50%;
        padding-left: 5px;
        padding-right: 5px;
 
+       @mixin atSmaller {
+           width: 45px;
+        height: 45px;
+           
+
+       }
+
        @mixin atSmall {
-           padding-left: 20px;
-            padding-right: 20px;
+           padding-left: 17px;
+            padding-right: 17px;
+           
 
        }
 
        @mixin atLarge {
-           padding-left: 25px;
-            padding-right: 25px;
+            width: 60px;
+            height: 60px;
+           padding-left: 15px;
+            padding-right: 15px;
 
        }
     }
@@ -23,12 +33,14 @@
     &--text {
         text-align: left;
         font-family: 'Montserrat', sans-serif;
-        font-size: 0.5rem;
+        font-size: 0.6rem;
         padding-right: 5px;
-        font-weight: 500;
+        
+        
 
           @mixin atSmaller {
             font-size: 0.7rem;
+            line-height:1.1rem;
         }
 
 
@@ -49,8 +61,8 @@
     &--iconText {
         text-align: center;
         font-family: 'Montserrat', sans-serif;
-        font-size: 0.5rem;
-        font-weight: 600;
+        font-size: 0.6rem;
+        font-weight: 700;
 
         @mixin atSmaller {
             font-size: 0.6rem;
@@ -70,20 +82,24 @@
 
      &--titleText {
         border-bottom: 0.5px solid #bbb7b7;
-        width: 65px;
+        width: 70px;
         text-align: left;
         font-weight: 700;
 
         @mixin atSmaller {
             font-size: 0.7rem;
+            width: 100px;
+           
         }
 
-        @mixin atSmaller {
+        @mixin atSmall {
             font-size: 0.8rem;
+            width: 120px;
         }
 
         @mixin atMedium {
             width: 80px;
+            width: 130px;
         }
 
         @mixin atLarge {
@@ -94,7 +110,6 @@
 
 .skillsIcon--icon:hover {
         padding: 1px;
-        border-radius: 50%;
         box-shadow: 0 0 40px #7e9af5; 
         transition: .7s ease-out;
 }
