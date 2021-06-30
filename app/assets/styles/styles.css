@@ -3,7 +3,6 @@
 @import "base/_variables.css";
 @import "base/_mixins.css";
 @import "modules/_headline.css";
-@import "modules/_particles-js.css";
 @import "modules/_flex-container.css";
 @import "modules/_topicIcons.css";
 @import "modules/_portfolio.css";

@@ -11,14 +11,14 @@ class Particles {
     "fpsLimit": 60,
     "particles": {
       "number": {
-        "value": 10,
+        "value": 40,
         "density": {
           "enable": true,
           "value_area": 800
         }
       },
       "color": {
-        "value": "#7e9af5",
+        "value": "#A2C563",
         "animation": {
           "enable": true,
           "speed": 20,
@@ -45,7 +45,7 @@ class Particles {
         }
       },
       "size": {
-        "value": 3,
+        "value": 2,
         "random": true,
         "anim": {
           "enable": false,
@@ -90,7 +90,7 @@ class Particles {
       },
       "modes": {
         "grab": {
-          "distance": 400,
+          "distance": 1000,
           "line_linked": {
             "opacity": 1
           }
@@ -120,12 +120,14 @@ class Particles {
       "repeat": "no-repeat",
       "size": "cover"
     }
-    
   };
-
   tsParticles.load('particles-js', this.particles)
 
+    
   }
+
 }
   
+
+
 export default Particles;
